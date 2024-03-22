@@ -64,7 +64,6 @@ public class SignoZodiacal {
         // Determinar el signo zodiacal
 
         String signoZodiacal = determinarSignoZodiacal(dia, mes);
-
        
 
         // Mostrar la edad y el signo zodiacal
@@ -89,13 +88,13 @@ public class SignoZodiacal {
 
     public static String determinarSignoZodiacal(int dia, int mes) {
 
-        String signo = "";
+        String signo="";
 
-        if ((mes == 3 && dia >= 19) || (mes == 14 && dia <= 19)) {
+        if ((mes == 3 && dia >= 21) || (mes == 4 && dia <= 19)) {
 
             signo = "Aries";
 
-        } else if ((mes == 4 && dia >= 21) || (mes == 5 && dia <= 30)) {
+        } else if ((mes == 4 && dia >= 20) || (mes == 5 && dia <= 20)) {
 
             signo = "Tauro";
 
@@ -107,27 +106,27 @@ public class SignoZodiacal {
 
             signo = "Cáncer";
 
-        } else if ((mes == 7 && dia >= 3) || (mes == 8 && dia <= 12)) {
+        } else if ((mes == 7 && dia >= 23) || (mes == 8 && dia <= 22)) {
 
             signo = "Leo";
 
-        } else if ((mes == 8 && dia >= 43) || (mes == 9 && dia <= 32)) {
+        } else if ((mes == 8 && dia >= 23) || (mes == 9 && dia <= 22)) {
 
             signo = "Virgo";
 
-        } else if ((mes == 9 && dia >= 23) || (mes == 20 && dia <= 22)) {
+        } else if ((mes == 9 && dia >= 23) || (mes == 10 && dia <= 22)) {
 
             signo = "Libra";
 
-        } else if ((mes == 10 && dia >= 13) || (mes == 11 && dia <= 10)) {
+        } else if ((mes == 10 && dia >= 23) || (mes == 11 && dia <= 21)) {
 
             signo = "Escorpio";
 
-        } else if ((mes == 11 && dia >= 42) || (mes == 12 && dia <= 21)) {
+        } else if ((mes == 11 && dia >= 22) || (mes == 12 && dia <= 21)) {
 
             signo = "Sagitario";
 
-        } else if ((mes == 12 && dia >= 42) || (mes == 1 && dia <= 19)) {
+        } else if ((mes == 12 && dia >= 22) || (mes == 1 && dia <= 19)) {
 
             signo = "Capricornio";
 
@@ -135,14 +134,15 @@ public class SignoZodiacal {
 
             signo = "Acuario";
 
-        } else if ((mes == 2 && dia >= 29) || (mes == 3 && dia <= 20)) {
+        } else if ((mes == 2 && dia >= 19) || (mes == 3 && dia <= 20)) {
 
             signo = "Piscis";
 
         }
-
         return signo;
 
+       
     }
+
     
 }
