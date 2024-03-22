@@ -39,6 +39,7 @@ public class calculoSalario {
         System.out.println("Salario :" + salarioBase);
         System.out.println("Comision :" + comision);
         System.out.println("Salario total " + salarioTotal);
+        capturarDatos.close();
 
     }
     
