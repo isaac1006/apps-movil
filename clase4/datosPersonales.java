@@ -8,7 +8,15 @@ public class datosPersonales {
 
         String nombre=JOptionPane.showInputDialog("ingres el nombre ");
         int edad = Integer.parseInt(JOptionPane.showInputDialog("ingrese la edad"));
+        String mensaje= "nombre:"+nombre + "\nedad:" + edad;
+        // mostrar mensaje // 
+        JOptionPane.showMessageDialog(null,mensaje,"datos personales",JOptionPane.INFORMATION_MESSAGE); // es importante agregar el .INFORMATION_MESAAGE para ver el string //
         
+        // ingresar apellido estado civil fecha de nacimiento // 
+        // mostrar nombre completo  año de nacimiento fecha de nacimiento barrio y direccion // 
+        
+        
+         
     }
     
 }
