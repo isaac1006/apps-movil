@@ -54,10 +54,28 @@ public class  productInputGui {
 
         // boton de insertar // 
         JButton inserButton= new JButton(" insertar Datos");
-        inserButton.setBounds(100,120, 80, 25);
+        inserButton.setBounds(180,120, 120, 25);
         panel.add(inserButton);
         
+            // etiqueta para mostrar la informacion ingresada //
+        JLabel infoLabel=new JLabel("");
+        infoLabel.setBounds(10, 150, 300, 25);
+        panel.add(infoLabel);
+
+        // ACCION DE BOTTON // 
+
+        inserButton.addActionListener(e->{
+            String nombre=nameText.getText();
+            int cantidad=Integer.parseInt(cantidadText.getText());
+            double precio=Double.parseDouble(precioText.getText());
+
+            // Mostrar la informacion ingresada en la etiqueta //
+            infoLabel.setText("nombre "+ nombre + ", cantidad  "+cantidad+ ", precio "+precio);
+
+         });
+
 
     }
+
 
 }
