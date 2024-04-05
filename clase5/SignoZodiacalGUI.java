@@ -1,3 +1,4 @@
+package clase5;
 import javax.swing.*;
 import java.awt.event.*;
 

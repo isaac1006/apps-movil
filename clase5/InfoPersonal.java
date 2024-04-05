@@ -1,4 +1,4 @@
-
+package clase5;
 import javax.swing.*;
 
 public class InfoPersonal{
