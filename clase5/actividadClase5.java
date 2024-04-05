@@ -8,7 +8,7 @@ public class actividadClase5 {
             // etiqueta y campo de texto para el nombre del producto // 
 
             JLabel nameLabel= new JLabel("NOMBRE DE PERSONA");
-            nameLabel.setBounds(10,20,150,25);
+            nameLabel.setBounds(10,20,160,25);
             panel.add(nameLabel);
 
             // campo //
